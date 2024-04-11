@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(160deg, yellow, white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#main-cont {
+  padding: 30px;
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  background-color: rgb(241, 241, 15);
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgb(167, 167, 6);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  color: rgb(0, 0, 0);
+}
+
+#open-btn {
+  padding: 20px 25px 20px 25px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 0);
+  border-style: none;
+  box-shadow: 2px 2px 7px rgb(46, 46, 1);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+#open-btn:hover {
+  background-color: rgb(230, 230, 85);
+  transition: 0.5s;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.545);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 200;
+}
+
+#popup {
+  display: none;
+  width: 50%;
+  background-color: rgb(255, 247, 0);
+  position: absolute;
+  border-radius: 10px;
+  padding: 20px;
+  left: 22%;
+  z-index: 200;
+  bottom: 45%;
+}
+
+.add-btn,
+.cancel-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: medium;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+.add-btn:hover,
+.cancel-btn:hover {
+  background-color: rgb(74, 73, 73);
+  transition: 0.5s;
+}
+.add-btn:active,
+.cancel-btn:active {
+  background-color: rgb(120, 119, 119);
+  transition: 0.5s;
+}
+
+#title,
+#author {
+  width: 92%;
+  padding: 7px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  margin: 5px;
+}
+
+#title,
+#author,
+#descripFeild:focus {
+  outline: none;
+}
+
+#descripFeild {
+  width: 93%;
+  padding: 5px;
+  margin: 5px;
+  background-color: transparent;
+  border-color: black;
+}
+
+#bookCont {
+  width: 25%;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+#bookCont h2 {
+  color: yellow;
+  margin: 5px;
+}
+#bookCont h4 {
+  color: yellow;
+  margin: 5px;
+}
+#bookCont p {
+  margin: 5px;
+}
+#bookCont button {
+  margin: 5px;
+  padding: 5px;
+  background-color: yellow;
+  border: none;
+  border-radius: 2px;
+  font-weight: 550;
+  cursor: pointer;
+}
+#bookCont button:hover {
+  background-color: rgb(225, 225, 104);
+  transition: 0.5s;
+}
+
+#bookCont button:active {
+  background-color: rgb(191, 191, 112);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  #main-cont {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #bookCont {
+    width: 85%;
+    margin-top: 50px;
+  }
+
+  #popup {
+    width: 60%;
+    left: 15%;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1 class="head">Booklet</h1>
+
+      <div id="overlay"></div>
+      <div id="main-cont">
+        <div id="bookCont">
+          <h2>Title</h2>
+          <h4>Author</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+            excepturi doloremque facilis eveniet deleniti, neque, molestias
+            nihil reprehenderit natus eaque corrupti quam repellat commodi vitae
+            temporibus. Magni nam provident est!
+          </p>
+          <button onclick="deleteBtn()">Delete</button>
+        </div>
+      </div>
+
+      <div id="popup">
+        <h2>Add Book</h2>
+        <input type="text" id="title" placeholder="Book Title" />
+        <input type="text" id="author" placeholder="Book Author" />
+
+        <textarea
+          id="descripFeild"
+          cols="20"
+          rows="3"
+          placeholder="Short Description.."
+        ></textarea>
+
+        <button class="add-btn" onclick="addBtn()">ADD</button>
+
+        <button class="cancel-btn" onclick="cancelBtn()">CANCEL</button>
+      </div>
+
+      <button id="open-btn" onclick="show()">+</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
